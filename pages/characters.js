@@ -5,7 +5,6 @@ export default function characters({characters}){
     return (   
         <div className={styles.titlecard}>
             <h1 className={styles.title}>Characters</h1>
-            
             <List characters= {characters} />
         </div>
     )

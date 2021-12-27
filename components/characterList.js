@@ -4,8 +4,8 @@ const characterList = ({characters}) =>{
     
     return(
         <div className={styles.grid}>
-            {characters.map((character) => ( 
-                <CharacterItem character={character} />
+            {characters.map((character,index) => ( 
+                <CharacterItem key={index} character={character} />
             ))};
         </div>
     )
