@@ -6,16 +6,16 @@ export default function BlogCard({ blog }) {
   const { title, slug, experience } = blog.fields
 
   return (
-    <div className="card">
-      <div className="content">
+    <div>
+      <div>
         <ul>
             <li>
-                <div className="info">
+                <div>
                     <h2>{ title }</h2>
                     <div>{documentToReactComponents(experience)}</div>
                 </div>
-                <div className="actions">
-                    <Link href={'/Blog/blogs' + slug}><a>Check the review</a></Link>
+                <div>
+                    <Link href={'/Blog/'+slug}>Check the review</Link>
                 </div>
             </li>
         </ul>

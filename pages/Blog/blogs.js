@@ -16,7 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function blogs({blogs}) {
-    console.log(blogs)
     return(
         <div className={styles.bloglist}>
             <h1>Blog List</h1>
