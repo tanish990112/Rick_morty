@@ -43,7 +43,7 @@ export default function BlogDetail({blog}) {
     return(
         <div className={styles.container}>
             <div className={styles.grid}>
-                    <h2>{title}</h2>
+                    <h2 className={style.title}>{title}</h2>
                     <div className={styles.description}>{documentToReactComponents(experience)}</div>
             </div>
         </div>
