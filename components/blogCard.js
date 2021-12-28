@@ -12,7 +12,7 @@ export default function BlogCard({ blog }) {
             <li>
                 <div>
                     <h2>{ title }</h2>
-                    <div>{documentToReactComponents(experience)}</div>
+                    
                 </div>
                 <div>
                     <Link href={'/Blog/'+slug}>Check the review</Link>
