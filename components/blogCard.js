@@ -1,18 +1,24 @@
 import Link from 'next/link'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
-export default function RecipeCard({ recipe }) {
-  const { title, slug, cookingTime, thumbnail } = recipe.fields
+
+export default function BlogCard({ blog }) {
+  const { title, slug, experience } = blog.fields
 
   return (
     <div className="card">
       <div className="content">
-        <div className="info">
-          <h4>{ title }</h4>
-          <p>Takes approx { cookingTime } mins to make</p>
-        </div>
-        <div className="actions">
-          <Link href={'/recipes/' + slug}><a>Cook this</a></Link>
-        </div>
+        <ul>
+            <li>
+                <div className="info">
+                    <h2>{ title }</h2>
+                    <div>{documentToReactComponents(experience)}</div>
+                </div>
+                <div className="actions">
+                    <Link href={'/Blog/blogs' + slug}><a>Check the review</a></Link>
+                </div>
+            </li>
+        </ul>
       </div>
     </div>
   )
