@@ -11,8 +11,7 @@ export default function BlogCard({ blog }) {
         <ul>
             <li>
                 <div>
-                    <h2>{ title }</h2>
-                    
+                    <h2>{ title }</h2>      
                 </div>
                 <div>
                     <Link href={'/Blog/'+slug}>Check the review</Link>
