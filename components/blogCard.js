@@ -3,7 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 
 export default function BlogCard({ blog }) {
-  const { title, slug, experience } = blog.fields
+  const { title, slug}= blog.fields
 
   return (
     <div>
