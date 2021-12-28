@@ -5,8 +5,8 @@ const episodeList = ({episodes}) =>{
         
         <div className = {Styles.grid}>
             
-            {episodes.map((episode) => (
-                <div className={Styles.card}>
+            {episodes.map((episode,index) => (
+                <div key={index} className={Styles.card}>
                     <div className={Styles.cardContent}>
                         <h2> {episode.name} </h2>
                     </div>
